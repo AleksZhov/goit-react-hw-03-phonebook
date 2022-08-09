@@ -49,6 +49,20 @@ export class App extends Component {
     return filteredContactsArray;
   };
 
+  componentDidMount() {
+    const localStorageContacts = JSON.parse(localStorage.getItem('contacts'));
+    if (localStorageContacts) {
+      this.setState({ contacts: localStorageContacts });
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.contacts !== this.state.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+      console.log('Contacts were rewrited to localStorage');
+    }
+  }
+
   render() {
     return (
       <div

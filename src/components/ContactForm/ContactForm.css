@@ -1,0 +1,15 @@
+.contacts-form {
+  border: 1px solid black;
+  width: 350px;
+  padding: 20px;
+}
+.contacts-form__name-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+.contact-form__input {
+  display: block;
+}

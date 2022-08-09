@@ -1,0 +1,14 @@
+.contacts__item {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+}
+.contacts__del-btn {
+  background-color: #fff;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.conctacts {
+  list-style-type: square;
+}

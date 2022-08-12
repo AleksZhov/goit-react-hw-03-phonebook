@@ -32,5 +32,6 @@ ContactList.propTypes = {
       number: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     })
   ),
+  onDelete: PropTypes.func.isRequired,
 };
 export default ContactList;
